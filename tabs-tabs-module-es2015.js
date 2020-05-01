@@ -9,7 +9,7 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div *ngIf=\"desktop; else elseBlock\">\n  <ion-tabs>\n\n    <ion-tab-bar slot=\"top\" hidden>\n      <ion-tab-button tab=\"tab1\" layout=\"icon-start\">\n        <ion-icon name=\"home\"></ion-icon>\n        <ion-label>Home</ion-label>\n      </ion-tab-button>\n      <!-- \n     <ion-tab-button tab=\"tab2\" layout=\"icon-start\">\n        <ion-icon name=\"restaurant\"></ion-icon>\n        <ion-label>Order</ion-label>\n      </ion-tab-button>\n\n      <ion-tab-button tab=\"tab3\" layout=\"icon-start\">\n        <ion-icon name=\"information-circle\"></ion-icon>\n        <ion-label>Information</ion-label>\n      </ion-tab-button>-->\n    </ion-tab-bar>\n\n  </ion-tabs>\n\n</div>\n\n<ng-template #elseBlock>\n  <ion-tabs>\n\n    <ion-tab-bar slot=\"bottom\">\n      <ion-tab-button tab=\"tab1\">\n        <ion-icon name=\"home\"></ion-icon>\n        <ion-label>Home</ion-label>\n      </ion-tab-button>\n\n      <ion-tab-button tab=\"tab2\">\n        <ion-icon name=\"restaurant\"></ion-icon>\n        <ion-label>Order</ion-label>\n      </ion-tab-button>\n\n      <ion-tab-button tab=\"tab3\">\n        <ion-icon name=\"information-circle\"></ion-icon>\n        <ion-label>Info</ion-label>\n      </ion-tab-button>\n    </ion-tab-bar>\n\n  </ion-tabs>\n</ng-template>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div *ngIf=\"desktop; else elseBlock\">\n  <ion-tabs>\n\n    <ion-tab-bar slot=\"top\" hidden>\n      <ion-tab-button tab=\"tab1\" layout=\"icon-start\">\n        <ion-icon name=\"home\"></ion-icon>\n        <ion-label>Home</ion-label>\n      </ion-tab-button>\n      <!-- \n     <ion-tab-button tab=\"tab2\" layout=\"icon-start\">\n        <ion-icon name=\"restaurant\"></ion-icon>\n        <ion-label>Order</ion-label>\n      </ion-tab-button>\n\n      <ion-tab-button tab=\"tab3\" layout=\"icon-start\">\n        <ion-icon name=\"information-circle\"></ion-icon>\n        <ion-label>Information</ion-label>\n      </ion-tab-button>-->\n    </ion-tab-bar>\n\n  </ion-tabs>\n\n</div>\n\n<ng-template #elseBlock>\n  <ion-tabs>\n\n    <ion-tab-bar slot=\"bottom\">\n      <ion-tab-button tab=\"home\">\n        <ion-icon name=\"home\"></ion-icon>\n        <ion-label>Home</ion-label>\n      </ion-tab-button>\n\n      <ion-tab-button tab=\"order\">\n        <ion-icon name=\"restaurant\"></ion-icon>\n        <ion-label>Order</ion-label>\n      </ion-tab-button>\n\n      <ion-tab-button tab=\"info\">\n        <ion-icon name=\"information-circle\"></ion-icon>\n        <ion-label>Info</ion-label>\n      </ion-tab-button>\n    </ion-tab-bar>\n\n  </ion-tabs>\n</ng-template>");
 
 /***/ }),
 
@@ -37,7 +37,7 @@ const routes = [
         component: _tabs_page__WEBPACK_IMPORTED_MODULE_3__["TabsPage"],
         children: [
             {
-                path: 'tab1',
+                path: 'home',
                 children: [
                     {
                         path: '',
@@ -46,7 +46,7 @@ const routes = [
                 ]
             },
             {
-                path: 'tab2',
+                path: 'order',
                 children: [
                     {
                         path: '',
@@ -55,7 +55,7 @@ const routes = [
                 ]
             },
             {
-                path: 'tab3',
+                path: 'info',
                 children: [
                     {
                         path: '',
@@ -65,14 +65,14 @@ const routes = [
             },
             {
                 path: '',
-                redirectTo: '/tabs/tab1',
+                redirectTo: '/tabs/home',
                 pathMatch: 'full'
             }
         ]
     },
     {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/home',
         pathMatch: 'full'
     }
 ];
