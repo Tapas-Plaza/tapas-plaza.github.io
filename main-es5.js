@@ -206,7 +206,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<ion-content [fullscreen]=\"true\">\n  <!--<ion-header collapse=\"condense\">\n    <ion-toolbar>\n      <ion-title size=\"large\">Tab 2</ion-title>\n    </ion-toolbar>\n  </ion-header>-->\n\n  <iframe\n    src=\"https://www.pronto-ny.com/ordering/restaurant/menu?restaurant_uid=ac4a6b17-c1a7-4cee-9d15-8f133982a3b3&client_is_mobile=true\"\n    frameborder=0 style=\"width: 100%; height: 100%;\" rel=\"preload\"></iframe>\n\n</ion-content>";
+    __webpack_exports__["default"] = "<ion-content [fullscreen]=\"true\">\n  <!--<ion-header collapse=\"condense\">\n    <ion-toolbar>\n      <ion-title size=\"large\">Tab 2</ion-title>\n    </ion-toolbar>\n  </ion-header>-->\n\n  <iframe\n    src=\"https://www.foodbooking.com/ordering/restaurant/menu?restaurant_uid=ec152518-e808-47bc-ad04-f4549137316b\"\n    frameborder=0 style=\"width: 100%; height: 100%;\" rel=\"preload\"></iframe>\n\n</ion-content>";
     /***/
   },
 
