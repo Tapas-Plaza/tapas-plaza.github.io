@@ -5,8 +5,8 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description"
+    content="Order Online for Takeaway / Delivery or Book a Table. Here at Tapas Plaza - Nerja you'll experience delicious Asian, Thai, Spanish, Salads... Try our mouth-watering dishes, carefully prepared with fresh ingredients! At Tapas Plaza, our recipe for success is simple – Great food & care makes customers return every time.">
 
   <title>Tapas Plaza</title>
 
@@ -17,13 +17,25 @@
   <link href="css/scrolling-nav.css" rel="stylesheet">
   <!-- Fonts -->
   <link rel="stylesheet" href="css/fonts.css">
-  <script src="https://kit.fontawesome.com/5d716a0516.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/5d716a0516.js" crossorigin="anonymous" defer async></script>
   <!-- Custom style -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="/icon/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="/icon/favicon-16x16.png" sizes="16x16">
   <link rel="manifest" href="/icon/site.webmanifest">
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": "Tapas Plaza",
+      "url": "https://tapasplaza.es/",
+      "publisher": {
+        "@type": "Restaurant",
+         "name": "Tapas Plaza",
+         "hasMenu": "https://www.foodbooking.com/ordering/restaurant/menu?restaurant_uid=ec152518-e808-47bc-ad04-f4549137316b",
+    }
+    </script>
 
 </head>
 
@@ -73,7 +85,7 @@
     </div>
   </header>
 
-  <section id="restaurant">
+  <section id="restaurant" itemtype="http://schema.org/Restaurant">
     <div class="container">
       <div class="row content-white">
         <div class="col-lg-12 mx-auto content">
@@ -239,8 +251,8 @@
       <div class="row content-green">
         <div class="col-lg-5 mx-auto about content">
           <h1>Where to find us</h1>
-          <p>
-            Paseo Burriana, Nerja<br>
+          <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="streetAddress">Paseo Burriana</span>, <span itemprop="addressLocality">Nerja</span> <br>
             Come visit us or order online:
           </p>
           <span class="btn btn-primary main-button" data-glf-cuid="2b610753-63be-40b6-8901-87328aaeaea0"
@@ -254,12 +266,12 @@
           <a class="phone-link" content="+34665454431" href="tel:+34665454431" itemprop="telephone">+34 665454431</a>
         </div>
         <div class="col-lg-5 mx-auto about content">
-          <iframe _ngcontent-cpn-c3="" allowfullscreen="" class="map-frame" itemprop="geo" itemscope=""
-            itemtype="http://schema.org/GeoCoordinates"
-            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJV7BGigglcg0Rvd4o9UOhzG8&amp;key=AIzaSyAWfbOmJcSmbBXAExmsdwQKAchR2tBJb4k"
-            style="border:0" width="100%" height="350px" frameborder="0">
-            <meta _ngcontent-cpn-c3="" content="36.750640" itemprop="latitude">
-            <meta _ngcontent-cpn-c3="" content="-3.867700" itemprop="longitude"></iframe>
+          <iframe width="100%" height="350px" frameborder="0" style="border:0" class="map-frame" itemprop="geo"
+          itemscope itemtype="http://schema.org/GeoCoordinates"
+          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJV7BGigglcg0Rvd4o9UOhzG8&key=AIzaSyAWfbOmJcSmbBXAExmsdwQKAchR2tBJb4k"
+          allowfullscreen>
+          <meta itemprop="latitude" content="36.750640" />
+          <meta itemprop="longitude" content="-3.867700" /></iframe>
         </div>
       </div>
     </div>
@@ -306,14 +318,14 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery/jquery.min.js" defer async></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js" defer async></script>
 
   <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/jquery-easing/jquery.easing.min.js" defer async></script>
 
   <!-- Custom JavaScript for this theme -->
-  <script src="js/scrolling-nav.js"></script>
+  <script src="js/scrolling-nav.js" defer async></script>
 
 </body>
 
