@@ -164,6 +164,11 @@ footer a:hover {
     text-decoration: none;
 }
 
+.nav-item {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 
 
 @media only screen and (max-width: 992px) {
