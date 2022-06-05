@@ -4,6 +4,10 @@
 
 body {
     background-color: #eaf5f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
 }
 
 section {
@@ -163,15 +167,6 @@ footer a:hover {
     color: white;
     text-decoration: none;
 }
-
-footer {
-    position: fixed;
-    height: 100px;
-    bottom: 0;
-    width: 100%;
-}
-
-
 
 @media only screen and (max-width: 992px) {
     .header {
