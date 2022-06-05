@@ -4,6 +4,10 @@
 
 body {
     background-color: #eaf5f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
 }
 
 section {
@@ -114,6 +118,19 @@ p {
     justify-content: center;
 }
 
+.opening-hours {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.small-text {
+    font-size: 0.8rem;
+}
+
 /* BUTTONS */
 
 .btn-primary {
@@ -164,15 +181,6 @@ footer a:hover {
     text-decoration: none;
 }
 
-footer {
-    position: fixed;
-    height: 100px;
-    bottom: 0;
-    width: 100%;
-}
-
-
-
 @media only screen and (max-width: 992px) {
     .header {
         display: none !important;
@@ -188,5 +196,8 @@ footer {
     }
     #time img {
         width: 100%;
+    }
+    .opening-hours {
+        transform: translate(-50%, -50%) scale(0.9);
     }
 }

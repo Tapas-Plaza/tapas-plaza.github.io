@@ -1,10 +1,28 @@
 .calculator {
     position: relative;
-    margin-top: 56px;
+    margin-top: 66px;
     font-family: "Andale" !important;
 }
 
-.cc__buttonGroup-question-button {
-    border-radius: 20px;
-    padding: 50px;
+.calculator-frame {
+    min-height: 97vh;
 }
+
+footer {
+    height: 60px;
+}
+
+/* This code is in the custom code in calculator */
+/* it doesn't work here because it's an iframe   */
+.cc__radio-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cc__radio-question > button {
+    margin-bottom: 10px !important;
+    border-radius: 5px;
+}
+/*************************************************/
