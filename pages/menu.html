@@ -55,81 +55,83 @@
     </div>
   </nav>
 
-  <section id="menu">
-    <div id="menu-pdf"></div>
-    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-    <script type="text/javascript">
-        document.addEventListener("adobe_dc_view_sdk.ready", function()
-        {
-            var adobeDCView = new AdobeDC.View({clientId: '02463254fb494bedbcd5e02f1c9a630d', divId: "menu-pdf"});
-            adobeDCView.previewFile(
-        {
-            content:   {location: {url: "/assets/Menu.pdf"}},
-            metaData: {fileName: "Bodea Brochure.pdf"}
-        }, {embedMode: "IN_LINE", showPrintPDF: false});
-        });
-    </script>
-  </section>
+  <div class="container">
+    <section id="menu">
+        <div id="menu-pdf"></div>
+        <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+        <script type="text/javascript">
+            document.addEventListener("adobe_dc_view_sdk.ready", function()
+            {
+                var adobeDCView = new AdobeDC.View({clientId: '02463254fb494bedbcd5e02f1c9a630d', divId: "menu-pdf"});
+                adobeDCView.previewFile(
+            {
+                content:   {location: {url: "/assets/Menu.pdf"}},
+                metaData: {fileName: "Bodea Brochure.pdf"}
+            }, {embedMode: "IN_LINE", showPrintPDF: false, showAnnotationTools: false});
+            });
+        </script>
+    </section>
 
-  <section id="time">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-10 mx-auto content">
-          <!-- TEMPORARILY CLOSED -->
-          <!--
-          <div>
-            <h6>
-              <b>
-                ⛔️Tapas Plaza is temporarily closed until the 1st of September! We will see you soon 🥰
-              </b>
-            </h6>
-          </div>
-          -->
-          <h1>Opening hours</h1>
-          <div class="position-relative">
-            <img src="../images/frame.png" class="img-fluid" alt="Responsive image">
-            <div class="opening-hours">
-              <p>
-                Wednesday-Sunday<br>12:00-18:00<br><span class="small-text">Closed when it rains ;)</span>
-              </p>
-          </div>
+    <section id="time">
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto content">
+            <!-- TEMPORARILY CLOSED -->
+            <!--
+            <div>
+                <h6>
+                <b>
+                    ⛔️Tapas Plaza is temporarily closed until the 1st of September! We will see you soon 🥰
+                </b>
+                </h6>
+            </div>
+            -->
+            <h1>Opening hours</h1>
+            <div class="position-relative">
+                <img src="../images/frame.png" class="img-fluid" alt="Responsive image">
+                <div class="opening-hours">
+                <p>
+                    Wednesday-Sunday<br>12:00-18:00<br><span class="small-text">Closed when it rains ;)</span>
+                </p>
+            </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+        </div>
+    </section>
 
-  <section id="contact">
-    <div class="container">
-      <div class="row content-green">
-        <div class="col-lg-5 mx-auto about content">
-          <h1>Where to find us</h1>
-          <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-            <span itemprop="streetAddress">Paseo Burriana</span>, <span itemprop="addressLocality">Nerja</span> <br>
-            Come visit us or order for delivery:
-          </p>
-          <a href="/pages/menu.html" class="btn btn-primary main-button">See Menu</a>
-          <!-- <span class="btn btn-primary main-button" data-glf-cuid="2b610753-63be-40b6-8901-87328aaeaea0"
-            data-glf-ruid="ec152518-e808-47bc-ad04-f4549137316b"> See MENU & Order Now!</span>
-          <script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async></script> -->
-          <h1>Contact us</h1>
-          <span>Order or booking info:</span>
-          <a class="phone-link" content="+34662614551" href="tel:+34662614551" itemprop="telephone">+34 662614551</a>
-          <br>
-          <span>Business inquiries:</span>
-          <a class="phone-link" content="+34621011056" href="tel:+34621011056" itemprop="telephone">+34 621011056</a>
+    <section id="contact">
+        <div class="container">
+        <div class="row content-green">
+            <div class="col-lg-5 mx-auto about content">
+            <h1>Where to find us</h1>
+            <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <span itemprop="streetAddress">Paseo Burriana</span>, <span itemprop="addressLocality">Nerja</span> <br>
+                Come visit us or order for delivery:
+            </p>
+            <a href="/pages/menu.html" class="btn btn-primary main-button">See Menu</a>
+            <!-- <span class="btn btn-primary main-button" data-glf-cuid="2b610753-63be-40b6-8901-87328aaeaea0"
+                data-glf-ruid="ec152518-e808-47bc-ad04-f4549137316b"> See MENU & Order Now!</span>
+            <script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async></script> -->
+            <h1>Contact us</h1>
+            <span>Order or booking info:</span>
+            <a class="phone-link" content="+34662614551" href="tel:+34662614551" itemprop="telephone">+34 662614551</a>
+            <br>
+            <span>Business inquiries:</span>
+            <a class="phone-link" content="+34621011056" href="tel:+34621011056" itemprop="telephone">+34 621011056</a>
+            </div>
+            <div class="col-lg-5 mx-auto about content">
+            <iframe width="100%" height="350px" frameborder="0" style="border:0" class="map-frame" itemprop="geo"
+                itemscope itemtype="http://schema.org/GeoCoordinates"
+                src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJV7BGigglcg0Rvd4o9UOhzG8&key=AIzaSyAWfbOmJcSmbBXAExmsdwQKAchR2tBJb4k"
+                allowfullscreen>
+                <meta itemprop="latitude" content="36.750640" />
+                <meta itemprop="longitude" content="-3.867700" /></iframe>
+            </div>
         </div>
-        <div class="col-lg-5 mx-auto about content">
-          <iframe width="100%" height="350px" frameborder="0" style="border:0" class="map-frame" itemprop="geo"
-            itemscope itemtype="http://schema.org/GeoCoordinates"
-            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJV7BGigglcg0Rvd4o9UOhzG8&key=AIzaSyAWfbOmJcSmbBXAExmsdwQKAchR2tBJb4k"
-            allowfullscreen>
-            <meta itemprop="latitude" content="36.750640" />
-            <meta itemprop="longitude" content="-3.867700" /></iframe>
         </div>
-      </div>
-    </div>
-    </div>
-  </section>
+        </div>
+    </section>
+  </div>
 
   <!-- Footer -->
   <footer class="py-5 bg-dark center-vertically">
