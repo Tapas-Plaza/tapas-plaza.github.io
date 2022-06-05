@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tapas Plaza | Menu</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/scrolling-nav.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../css/fonts.css">
+    <script src="https://kit.fontawesome.com/5d716a0516.js" crossorigin="anonymous"></script>
+    <!-- Custom style -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../icon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../icon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="../icon/site.webmanifest">
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="/pages/workinghours.html">tapas plaza</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/index.html#restaurant">Our restaurant</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/index.html#tapas">Our tapas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/index.html#about">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/index.html#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="menu">
+    <div id="menu-pdf"></div>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script type="text/javascript">
+        document.addEventListener("adobe_dc_view_sdk.ready", function()
+        {
+            var adobeDCView = new AdobeDC.View({clientId: 'ab651beeddfd488f8dfda26aaf484318', divId: "menu-pdf"});
+            adobeDCView.previewFile(
+        {
+            content:   {location: {url: "/assets/Menu.pdf"}},
+            metaData: {fileName: "Bodea Brochure.pdf"}
+        }, {embedMode: "IN_LINE", showPrintPDF: false});
+        });
+    </script>
+  </section>
+
+  <section id="time">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto content">
+          <!-- TEMPORARILY CLOSED -->
+          <!--
+          <div>
+            <h6>
+              <b>
+                ⛔️Tapas Plaza is temporarily closed until the 1st of September! We will see you soon 🥰
+              </b>
+            </h6>
+          </div>
+          -->
+          <h1>Opening hours</h1>
+          <div class="position-relative">
+            <img src="../images/frame.png" class="img-fluid" alt="Responsive image">
+            <div class="opening-hours">
+              <p>
+                Wednesday-Sunday<br>12:00-18:00<br><span class="small-text">Closed when it rains ;)</span>
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="row content-green">
+        <div class="col-lg-5 mx-auto about content">
+          <h1>Where to find us</h1>
+          <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="streetAddress">Paseo Burriana</span>, <span itemprop="addressLocality">Nerja</span> <br>
+            Come visit us or order for delivery:
+          </p>
+          <a href="/pages/menu.html" class="btn btn-primary main-button">See Menu</a>
+          <!-- <span class="btn btn-primary main-button" data-glf-cuid="2b610753-63be-40b6-8901-87328aaeaea0"
+            data-glf-ruid="ec152518-e808-47bc-ad04-f4549137316b"> See MENU & Order Now!</span>
+          <script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async></script> -->
+          <h1>Contact us</h1>
+          <span>Order or booking info:</span>
+          <a class="phone-link" content="+34662614551" href="tel:+34662614551" itemprop="telephone">+34 662614551</a>
+          <br>
+          <span>Business inquiries:</span>
+          <a class="phone-link" content="+34621011056" href="tel:+34621011056" itemprop="telephone">+34 621011056</a>
+        </div>
+        <div class="col-lg-5 mx-auto about content">
+          <iframe width="100%" height="350px" frameborder="0" style="border:0" class="map-frame" itemprop="geo"
+            itemscope itemtype="http://schema.org/GeoCoordinates"
+            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJV7BGigglcg0Rvd4o9UOhzG8&key=AIzaSyAWfbOmJcSmbBXAExmsdwQKAchR2tBJb4k"
+            allowfullscreen>
+            <meta itemprop="latitude" content="36.750640" />
+            <meta itemprop="longitude" content="-3.867700" /></iframe>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark center-vertically">
+    <div class="m-0 text-center text-white">
+      <a href="https://www.facebook.com/TapasPlazaNerja/">
+        <i class="fab fa-facebook-square"></i>
+      </a>
+      <a
+        href="https://www.google.com/maps/place/Tapas+Plaza,+Paseo+Burriana,+6+local+1A.,+29780+Nerja,+M%C3%A1laga/@36.7506407,-3.8677018,17z/data=!4m2!3m1!1s0xd7225088a46b057:0x6fcca143f528debd">
+        <i class="fab fa-google"></i>
+      </a>
+      <a
+        href="https://www.tripadvisor.com/Restaurant_Review-g315917-d1477947-Reviews-Tapas_Plaza-Nerja_Costa_del_Sol_Province_of_Malaga_Andalucia.html">
+        <i class="fab fa-tripadvisor"></i>
+      </a>
+      <a href="/pages/menu.html" class="btn btn-primary btn-sm main-button" style="padding: 8px;">See Menu</a>
+      <!-- <span class="btn btn-primary btn-sm main-button" data-glf-cuid="2b610753-63be-40b6-8901-87328aaeaea0"
+        data-glf-ruid="ec152518-e808-47bc-ad04-f4549137316b" style="padding: 8px;">See MENU & Order Now!</span>
+      <script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async></script> -->
+      <br>
+      Est. 2006
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="/vendor/jquery/jquery.min.js" defer async></script>
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js" defer async></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="/vendor/jquery-easing/jquery.easing.min.js" defer async></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="/js/scrolling-nav.js" defer async></script>
+
+</body>
+
+</html>

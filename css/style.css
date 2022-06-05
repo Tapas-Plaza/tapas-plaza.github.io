@@ -118,6 +118,19 @@ p {
     justify-content: center;
 }
 
+.opening-hours {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.small-text {
+    font-size: 0.8rem;
+}
+
 /* BUTTONS */
 
 .btn-primary {
@@ -183,5 +196,8 @@ footer a:hover {
     }
     #time img {
         width: 100%;
+    }
+    .opening-hours {
+        transform: translate(-50%, -50%) scale(0.9);
     }
 }
