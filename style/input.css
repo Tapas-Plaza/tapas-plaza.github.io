@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+@custom-variant mobile-only (@media (max-width: 37.4375em));
+@custom-variant tablet-only (@media (min-width: 37.5em) and (max-width: 56.1875em));
+@custom-variant tablet-landscape-only (@media (min-width: 56.25em) and (max-width: 74.9375em));
+
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-tablet-up: 37.5em;
+  --breakpoint-tablet-landscape-up: 56.25em;
+  --breakpoint-laptop-up: 75em;
+  --breakpoint-desktop-up: 93.75em;
+  --breakpoint-desktop-large-up: 118.75em;
+  --breakpoint-desktop-extra-large-up: 143.75em;
+}
